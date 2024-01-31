@@ -3,7 +3,8 @@
 <ul>
   <% @blog_list.each do |blog| %>
     <li>
-      <%= link_to "Blog: #{blog.title}", blog_show_path(blog.id) %>
+      <%= link_to "Blog: #{blog.title}", blog_path(blog.id) %>
     </li>
   <% end %>
 </ul>
+<%= link_to "Create New Blog", new_path %>
