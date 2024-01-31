@@ -1,0 +1,9 @@
+<h1>Blog Post</h1>
+<h2>Click to see each blog post</h2>
+<ul>
+  <% @blog_list.each do |read|%>
+    <li>
+      <%= link_to "Blog: #{read.blog}",  blog_path(read) %>
+    </li>
+  <% end %>
+</ul>
